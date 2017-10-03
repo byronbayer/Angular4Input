@@ -1,43 +1,60 @@
-<form>
-    <div class="form-group">
-        <div class="row">
-            <div class="col-2"></div>
-            <div class="col-2">
+<div class="container">
+    <form>
+        <div class="form-row">
+            <div class="form-group col-md-6">
                 <label for="email">Email address</label>
-            </div>
-            <div class="col-3">
                 <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
                 <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
             </div>
-            <div class="col-3">
+            <div class="form-group col-md-6">
+                <label for="emailVerify">Email address</label>
                 <input type="emailVerify" class="form-control" id="emailVerify" aria-describedby="emailHelp" placeholder="Re-enter email">
+                <label for="password">Password</label>
                 <input type="password" class="form-control" id="password" aria-describedby="emailHelp" placeholder="Enter password">
             </div>
         </div>
-        <div class="row">
-            <div class="col-2"></div>
-            <div class="col-2">
+        <div class="form-row">
+            <div class="form-group col-md-3">
                 <label for="title">Title</label>
-            </div>
-            <div class="col-2">
                 <select class="form-control" name="title">
-                    <option value="">Select a title</option>
-                    <option value="s">Mr</option>
-                    <option value="m">Mrs</option>
-                    <option value="l">Miss</option>                    
+                    <option value="-1">Select a title</option>
+                    <option value="1">Mr</option>
+                    <option value="2">Mrs</option>
+                    <option value="3">Miss</option>                    
                 </select>
             </div>
         </div>
-        <div class="row">
-            <div class="col-2"></div>
-            <div class="col-2">
-                <label for="firstName">First Name</label>
-            </div>
-            <div class="col-3">
-                <input type="text" class="form-control" id="firstName" placeholder="Enter First Name">
 
+        <div class="row"></div>
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="companyName">Registered Company Name</label>
+                <input type="text" class="form-control" id="companyName" placeholder="Enter Registered Company Name">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="companyNumber">Company Registration Number</label>
+                <input type="text" class="form-control" id="companyNumber" placeholder="Enter Company Registration Number">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="companyType">Company Type</label>
+                <input type="text" class="form-control" id="companyType" placeholder="Enter Company Type">
+                <label for="companySector">Company Sector</label>
+                <select class="form-control" name="companySector">
+                    <option value="-1">Select a sector</option>
+                    <option value="1">A</option>
+                    <option value="2">B</option>
+                    <option value="3">C</option>                    
+                </select>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="companyAddress">Company Address</label>
+                <textarea class="form-control" rows="4" id="companyAddress"></textarea>
             </div>
         </div>
 
-    </div>
-</form>
+    </form>
+
+</div>
