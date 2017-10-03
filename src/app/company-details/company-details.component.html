@@ -1,3 +1,43 @@
-<p>
-  company-details works!
-</p>
+<form>
+    <div class="form-group">
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-2">
+                <label for="email">Email address</label>
+            </div>
+            <div class="col-3">
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="col-3">
+                <input type="emailVerify" class="form-control" id="emailVerify" aria-describedby="emailHelp" placeholder="Re-enter email">
+                <input type="password" class="form-control" id="password" aria-describedby="emailHelp" placeholder="Enter password">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-2">
+                <label for="title">Title</label>
+            </div>
+            <div class="col-2">
+                <select class="form-control" name="title">
+                    <option value="">Select a title</option>
+                    <option value="s">Mr</option>
+                    <option value="m">Mrs</option>
+                    <option value="l">Miss</option>                    
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-2">
+                <label for="firstName">First Name</label>
+            </div>
+            <div class="col-3">
+                <input type="text" class="form-control" id="firstName" placeholder="Enter First Name">
+
+            </div>
+        </div>
+
+    </div>
+</form>
